@@ -1,0 +1,327 @@
+* {
+    font-family: "BRI Digital Text", sans-serif;
+}
+
+hr {
+    width: 100%;
+    max-width: 488px;
+    height: 2px;
+    background-color: #EAEBEB;
+    border: none;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--Neutral-Light-Light-10, #F8F9F9);
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: flex-start;
+    /* Align to the top vertically */
+    height: 100%;
+    overflow-x: hidden;
+    /* Prevent horizontal overflow */
+}
+
+.nav {
+    display: flex;
+    width: 650px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--Primary-Blue-by-BRI-Blue-70, #006CC7);
+}
+
+.nav,
+.body,
+.card,
+.footer {
+    width: 100%;
+    max-width: 650px;
+    padding: 2px;
+}
+
+.card {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px -1px 12px 0px rgba(119, 119, 119, 0.10);
+}
+
+.box1,
+.box2 {
+    width: 96%;
+    margin-bottom: 10px;
+
+
+}
+
+
+
+.t1 {
+    text-align: center;
+    font-size: 22px;
+}
+
+.t1,
+h2 {
+    font-weight: 700;
+    justify-content: center;
+    margin: 5px;
+
+    color: var(--Primary-Blue-Blue-100, #0C5A98);
+}
+
+.box2 {
+    border-radius: 8px;
+    border: 1.5px solid var(--Neutral-Light-Light-20, #EAEBEB);
+    padding: 8px;
+    margin-left: 10px;
+
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--Neutral-Dark-Dark-40, #292929);
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--Neutral-Dark-Dark-40, #292929);
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--Neutral-Dark-Dark-20, #525252);
+}
+
+
+
+
+
+
+.row {
+    display: flex;
+    margin: 10px 15px;
+    /* Space between rows */
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid var(--Neutral-Light-Light-20, #EAEBEB);
+    background: var(--Neutral-Light-Light-10, #F8F9F9);
+}
+
+.subBox2 {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 10px;
+    padding: 0;
+    line-height: normal;
+    /* Reset line height */
+    margin-bottom: 10px;
+}
+
+.subBox2a {
+
+    margin-bottom: 10px;
+    margin: 0;
+    gap: 10px;
+    padding: 0;
+    line-height: normal;
+    /* Reset line height */
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    /* Reset line height */
+}
+
+.t2 {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--Neutral-Light-Light-80, #777);
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    /* Reset line height */
+}
+
+
+.label {
+    width: 200px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--Neutral-Light-Light-80, #777);
+}
+
+.value {
+    width: 260px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--Neutral-Dark-Dark-40, #292929);
+
+}
+
+.info {
+    color: #777;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 10px;
+
+
+}
+
+.infotitle,
+.p {
+    color: #777;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    /* Removes any margin */
+    padding: 0;
+    /* Removes any padding */
+    margin-left: 10px;
+}
+
+
+.footer {
+    width: 100%;
+    max-width: 550px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: var(--Primary-Blue-by-BRI-Blue-80, #00549B);
+}
+
+.Fbox1 {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.appstore,
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact {
+    gap: 0;
+}
+
+h6,
+h7 {
+    color: var(--Neutral-Base-White, #FFF);
+    margin: 10px;
+}
+
+h7 {
+    font-size: 14px;
+}
+
+svg {
+    vertical-align: middle;
+}
+
+.Fbox2 {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px;
+    }
+
+    .Fbox1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav,
+    .body,
+    .card {
+        padding: 10px;
+    }
+
+    .box1,
+    .box2 {
+        margin: 0;
+    }
+
+    .logo {
+        width: 16px;
+        height: 16px;
+        padding: 6px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h6,
+    p {
+        font-size: 14px;
+    }
+
+    .value,
+    .label {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 5px;
+    }
+
+    .Fbox1 {
+        gap: 10px;
+    }
+
+    .box1,
+    .box2 {
+        margin: 0;
+    }
+
+    .logo {
+        width: 14px;
+        height: 14px;
+        padding: 4px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h6,
+    p {
+        font-size: 12px;
+    }
+
+    .value,
+    .label {
+        width: 100%;
+    }
+}
