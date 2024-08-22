@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transaction Details</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://example.com/fonts/BRI-Digital-Text.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <!-- navbar -->
+    <div class="nav">
+        <svg xmlns="http://www.w3.org/2000/svg" width="78" height="32" viewBox="0 0 78 32" fill="none">
+            <path d="M26.33 3.02136H8.25244C6.05773 3.02136 4.27957 4.83773 4.27957 7.07992V24.9237C4.27957 27.1445 6.0235 28.9488 8.19038 28.9801H26.3193C28.5119 28.9801 30.2958 27.1666 30.2958 24.9229L30.3036 7.07921C30.3015 4.83773 28.5219 3.02136 26.33 3.02136ZM10.3972 26.8986L9.41077 26.9113C8.21891 26.9113 7.25244 25.931 7.25244 24.726L7.24603 24.5519V8.07661L7.25244 7.1894C7.29881 6.02494 8.19038 5.0837 9.35157 5.0837H11.3558C13.1768 5.0837 14.6475 6.65765 14.6475 8.51382C14.6505 9.3936 14.3119 10.2404 13.7025 10.8769L8.58553 16.0452L13.3822 20.9113C14.0108 21.5477 14.3657 22.4033 14.3715 23.2964C14.3715 25.2862 12.5955 26.8986 10.3972 26.8986ZM25.1375 26.8858L16.2017 26.8822C16.2017 26.8822 17.2338 24.6528 17.2338 23.2751C17.2338 21.5966 16.6703 20.0916 15.7873 19.1006L12.731 15.9954L15.848 12.7835C16.7802 11.9105 17.395 10.3664 17.395 8.60766C17.395 7.215 17.0099 5.983 16.3865 5.08583H18.5519C20.3707 5.08583 21.8429 6.65978 21.8429 8.51595C21.8457 9.39492 21.5073 10.2409 20.8986 10.8769L15.8801 15.9911L26.3001 26.5836C25.9478 26.7889 25.5455 26.8934 25.1375 26.8858ZM27.3179 23.5765L19.8515 15.989L23.4071 12.3875C24.1318 11.4811 24.594 10.1247 24.594 8.60553C24.594 7.20504 24.2002 5.93821 23.574 5.04389L25.1646 5.09152C25.7424 5.09565 26.2949 5.32834 26.7005 5.73842C27.1062 6.1485 27.3319 6.70238 27.3279 7.27827L27.3179 23.5765Z" fill="white"/>
+            <path d="M46.3242 14.7819C46.4725 14.634 46.6416 14.4499 46.8434 14.2217C47.0554 13.9702 47.2427 13.6991 47.4026 13.412C47.588 13.0806 47.7393 12.7315 47.8541 12.3698C47.9831 11.9727 48.0464 11.5573 48.0417 11.1399C48.0478 10.326 47.8997 9.51827 47.6052 8.75909C47.3136 8.01985 46.8544 7.35782 46.2636 6.82472C45.6616 6.27803 44.9084 5.84438 43.9975 5.53372C43.0867 5.22305 42.0361 5.06665 40.8299 5.06665H32.8664V26.8573H41.611C42.877 26.8573 43.9904 26.6867 44.9355 26.3455C45.8805 26.0042 46.6701 25.5294 47.2892 24.9308C47.9042 24.3412 48.3798 23.6227 48.6815 22.8272C48.9862 22.0058 49.1404 21.1366 49.1366 20.2608C49.1366 19.0371 48.8551 17.9471 48.2921 16.9907C47.7291 16.0343 47.0731 15.298 46.3242 14.7819ZM42.4583 9.06265C42.7289 9.15985 42.9777 9.30885 43.1908 9.50128C43.6901 9.97901 43.9398 10.547 43.9398 11.2075C43.9398 11.8075 43.8349 12.3015 43.6259 12.6947C43.4655 13.0228 43.2579 13.3257 43.0097 13.594H36.9241V8.80601H40.7044C41.4134 8.80601 41.9947 8.89132 42.4583 9.06265ZM41.8278 17.3639C42.9284 17.3639 43.7408 17.6483 44.2743 18.217C44.7682 18.7579 45.0374 19.4656 45.0275 20.1969C45.0327 20.5735 44.9593 20.947 44.8119 21.2938C44.6646 21.6407 44.4465 21.9532 44.1716 22.2116C43.601 22.7689 42.6625 23.0478 41.3563 23.0483H36.9241V17.3639H41.8278Z" fill="white"/>
+            <path d="M63.9624 17.4748C64.5948 17.0532 65.1498 16.5263 65.6029 15.9172C66.0407 15.3268 66.3692 14.6634 66.573 13.9579C66.7799 13.2437 66.8851 12.504 66.8854 11.7605C66.8947 10.841 66.7304 9.92799 66.4011 9.06904C66.0852 8.26236 65.5876 7.53878 64.9467 6.95409C64.3019 6.36072 63.495 5.89863 62.5259 5.56782C61.5559 5.23796 60.4375 5.07019 59.1679 5.07019H50.5638V26.8573H54.7071V18.7679H57.0117L62.7178 26.8609H67.568L61.6672 18.4836C62.4849 18.2818 63.2615 17.9405 63.9624 17.4748ZM59.2007 8.806C59.4484 8.80626 59.6959 8.82145 59.9418 8.8515C60.6764 8.9624 61.2799 9.22472 61.7435 9.64345C62.3759 10.2122 62.6919 10.9093 62.6914 11.7349C62.6914 12.146 62.6236 12.5543 62.491 12.9435C62.3571 13.3315 62.1394 13.6856 61.8533 13.9807C61.534 14.298 61.1522 14.5461 60.7321 14.7094C60.2749 14.8935 59.7264 14.9887 59.0851 14.9887H54.7071V8.80387L59.2007 8.806Z" fill="white"/>
+            <path d="M69.033 5.06946V5.07728C68.9888 5.07728 68.9474 5.06946 68.9046 5.06946H68.8711V26.8573H73.0893V5.06946H69.033Z" fill="white"/>
+          </svg>
+    </div>
+    <!-- main body -->
+    <div class="body">
+      <div class="sub-body">
+        <h1>Halo Dwi Chandra,</h1>
+        <p>Berikut detail transaksi kamu di BRImo:</p>
+        <!-- card -->
+        <div class="card">
+          <div class="box1">
+            <div style="
+                text-align: center;
+                color: #777777;
+                font-size: 14px;
+                font-family: BRI Digital Text;
+                font-weight: 500;
+                margin: 0;
+                padding-top: 10px;
+                word-wrap: break-word;
+              ">
+              Total Transaksi
+            </div>
+            <p class="t1">Rp450.000</p>
+            <div class="box2">
+              <div>
+                <h3>Tujuan</h3>
+              </div>
+              <div class="subBox2">
+                <div class="logo">
+                  <img src="/images/image 137.png" alt="play store" width="20" height="20" />
+                </div>
+                <div class="subBox2a">
+                  <h2>DWI CHANDRA</h2>
+                  <p class="t2">Apartemen Ciputra BSD - 331028279384928374</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="details">
+            <div class="row">
+              <div class="label">Nomor Referensi</div>
+              <div class="value">0123 5467 8900 1221</div>
+            </div>
+            <div class="row">
+              <div class="label">Tanggal Transaksi</div>
+              <div class="value">15 Feb 2024, 10:45 WIB</div>
+            </div>
+            <div class="row">
+              <div class="label">Rekening Sumber Dana</div>
+              <div class="value">0290 **** **** 112</div>
+            </div>
+            <div class="row">
+              <div class="label">Nama Sumber Dana</div>
+              <div class="value">DWI CHANDRA</div>
+            </div>
+            <div class="row">
+              <div class="label">Jenis Transaksi</div>
+              <div class="value">IPL & Properti</div>
+            </div>
+            <div class="row">
+              <div class="label">Nomor Unit</div>
+              <div class="value">CE-02</div>
+            </div>
+            <div class="row">
+              <div class="label">Periode Pemakaian</div>
+              <div class="value">Feb 2024</div>
+            </div>
+            <div class="row">
+              <div class="label">Jatuh Tempo</div>
+              <div class="value">28 Feb 2024</div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="label">Biaya IPL & Properti</div>
+              <div class="value">Rp420.000</div>
+            </div>
+            <div class="row">
+              <div class="label">Biaya Paekir</div>
+              <div class="value">Rp10.000</div>
+            </div>
+            <div class="row">
+              <div class="label">Asuransi Gedung</div>
+              <div class="value">Rp10.000</div>
+            </div>
+            <div class="row">
+              <div class="label">Asuransi Gempa Bumi</div>
+              <div class="value">Rp10.000</div>
+            </div>
+          </div>
+            <hr />
+            <div class="row">
+              <div class="label">Subtotal</div>
+              <div class="value">Rp450.000</div>
+            </div>
+            <div class="row">
+              <div class="label">Biaya Admin</div>
+              <div class="value">Rp0</div>
+            </div>
+            <div class="info">
+              <h5>INFORMASI:</h5>
+            </div>
+            <div class="infotitle">
+              
+              <p>Biaya Termasuk PPN (Apabila Dikenakan/Apabila Ada)</p>
+              <p>PT. Bank Rakyat Indonesia (Persero) Tbk.</p>
+              <p>Kantor Pusat BRI - Jakarta Pusat</p>
+              <p>NPWP : 01.001.608.7-093.000</p>
+              
+
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <p>Semoga info ini bermanfaat buat kamu, ya. Butuh info lebih lanjut?</p>
+          <p>Hubungi kami melalui:</p>
+          <ul>
+            <li>Pusat Bantuan di BRImo</li>
+            <li>Contact Center BRI 1500017</li>
+            <li>WhatsApp 0812-12-14017</li>
+            <li>Email <a href="mailto:callbri@bri.co.id">callbri@bri.co.id</a></li>
+            <li>Website <a ref="https://bri.co.id" target="_blank">bri.co.id</a></li>
+          </ul>
+          <p>*Jika kamu berada di luar negeri, kontak kami melalui Pusat Bantuan.</p>
+          <p>Terima kasih sudah menggunakan BRImo.</p>
+          <p>Hormat kami,<br>Bank Rakyat Indonesia</p>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="Fbox1">
+            <div class="appstore">
+                <h7>Download Aplikasi BRImo</h7>
+                <div>
+                    <img src="/images/app-store-png-logo-33123 1.png" alt="play store" width="101" height="30" />
+                    <img src="/images/app-store-png-logo-33123 2.png" alt="app store" width="101" height="30" />
+                </div>
+            </div>
+            <div class="contact">
+                <div>
+                    <h6>Hubungi Kami</h6>
+                    <h6>Contact Center BRI</h6>
+                    <div>
+                        <h7><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.60695 3.05645C5.14315 1.52026 7.73551 1.63704 8.80515 3.55366L9.39858 4.617C10.0971 5.86861 9.79942 7.44779 8.77689 8.48282C8.76327 8.50148 8.69109 8.60657 8.6821 8.79019C8.67063 9.02456 8.75386 9.56658 9.59364 10.4064C10.4331 11.2459 10.9751 11.3293 11.2096 11.3179C11.3933 11.309 11.4985 11.2367 11.5172 11.2231C12.5522 10.2006 14.1314 9.90292 15.383 10.6014L16.4463 11.1949C18.363 12.2645 18.4797 14.8568 16.9435 16.393C16.1218 17.2148 15.0293 17.9449 13.7453 17.9935C11.8426 18.0657 8.68322 17.5743 5.55446 14.4455C2.4257 11.3168 1.93433 8.15743 2.00646 6.2547C2.05513 4.97075 2.78525 3.87816 3.60695 3.05645ZM7.60749 4.22206C7.05977 3.24063 5.58792 3.01515 4.57678 4.02628C3.86783 4.73524 3.40693 5.51776 3.37702 6.30666C3.31687 7.89339 3.70862 10.66 6.52429 13.4757C9.33996 16.2914 12.1066 16.6831 13.6933 16.623C14.4822 16.5931 15.2648 16.1322 15.9737 15.4232C16.9848 14.4121 16.7594 12.9402 15.7779 12.3925L14.7146 11.7991C14.0531 11.4299 13.124 11.5558 12.4718 12.2081L12.4716 12.2083C12.4075 12.2723 11.9999 12.6526 11.2762 12.6878C10.5354 12.7239 9.63861 12.391 8.62381 11.3762C7.60868 10.3611 7.27591 9.46406 7.31219 8.72312C7.34763 7.99938 7.72821 7.59194 7.79189 7.52825L7.79192 7.52822C8.44415 6.87599 8.57008 5.94686 8.20092 5.2854L7.60749 4.22206Z" fill="white"/>
+                          </svg> 1500017</h7>
+                          <h7>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                <path d="M3.10788 2.42547C2.85422 2.24326 2.50661 2.30948 2.33146 2.57336C2.15631 2.83725 2.21996 3.19888 2.47362 3.38109L6.54928 6.30872C7.53116 7.01401 8.83542 6.99187 9.7946 6.2536L13.5413 3.37007C13.7891 3.17935 13.8414 2.81575 13.658 2.55795C13.4748 2.30015 13.1252 2.24577 12.8774 2.43649L9.13072 5.32C8.55524 5.76299 7.77265 5.77623 7.18355 5.35306L3.10788 2.42547Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.7907 0C1.24944 0 0 1.29982 0 2.90323V9.09677C0 10.7002 1.24944 12 2.7907 12H13.2093C14.7506 12 16 10.7002 16 9.09677V2.90323C16 1.29982 14.7506 0 13.2093 0H2.7907ZM1.11628 2.90323C1.11628 1.94118 1.86594 1.16129 2.7907 1.16129H13.2093C14.134 1.16129 14.8837 1.94118 14.8837 2.90323V9.09677C14.8837 10.0588 14.134 10.8387 13.2093 10.8387H2.7907C1.86594 10.8387 1.11628 10.0588 1.11628 9.09677V2.90323Z" fill="white"/>
+                              </svg>
+                            callbri@bri.co.id
+                          </h7>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="Fbox2">
+            <h6> dikirim secara otomatis oleh sistem. Mohon untuk tidak membalas.</h6>
+            <h6>© 2023 PT.Bank Rakyat Indonesia (Persero) Tbk.</h6>
+            <h6>All Rights Reserved.</h6>
+        </div>
+
+     </div>
+    </div>
+    
+     
+  </div>
+</body>
+</html>
