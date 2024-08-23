@@ -4,7 +4,7 @@
 
 hr {
     width: 100%;
-    max-width: 488px;
+    max-width: 600px;
     height: 2px;
     background-color: #EAEBEB;
     border: none;
@@ -202,53 +202,49 @@ h2 {
 }
 
 
-.footer {
-    width: 100%;
-    max-width: 550px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+.footer{
     background: var(--Primary-Blue-by-BRI-Blue-80, #00549B);
+   padding: 40px;
 }
 
-.Fbox1 {
-    display: flex;
-    gap: 30px;
-    align-items: flex-start;
-}
 
-.appstore,
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.contact {
-    gap: 0;
-}
-
-h6,
-h7 {
-    color: var(--Neutral-Base-White, #FFF);
-    margin: 10px;
-}
-
-h7 {
-    font-size: 14px;
-}
-
-svg {
-    vertical-align: middle;
-}
-
-.Fbox2 {
+.footer-table {
     width: 100%;
-    max-width: 600px;
-    text-align: center;
-}
+    margin-top: 20px;
+  }
+  
+  .footer-cell {
+    vertical-align: top;
+    padding: 10px;
+    color: var(--Neutral-Base-White, #FFF);
+  }
+  
+  .footer-cell h6,
+  .footer-cell h7 {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  
+  .footer-cell div {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-cell img {
+    margin-top: 5px;
+    display: block;
+  }
+  
+  .footer h6 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .footer h7 {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  
 
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
@@ -260,6 +256,14 @@ svg {
         flex-direction: column;
         gap: 20px;
     }
+    .footer-cell h6,
+    .footer-cell h7 {
+      margin: 0;
+      padding-bottom: 0px;
+    }
+    
+
+
 
     .nav,
     .body,
@@ -305,6 +309,12 @@ svg {
     .box2 {
         margin: 0;
     }
+    .footer-cell div {
+        display: flex;
+        gap: 4px;
+        flex-direction: column;
+      }
+
 
     .logo {
         width: 14px;
