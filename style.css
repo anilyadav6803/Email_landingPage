@@ -179,27 +179,22 @@ h2 {
 
 .info {
     color: #777;
-
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    margin-left: 10px;
-
-
+    margin: 5px 0; /* Reduce the gap by setting margin-top and margin-bottom */
+    padding: 0; /* Ensure no padding is applied */
 }
 
-.infotitle,
-.p {
+.infotitle {
     color: #777;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    margin: 0;
-    /* Removes any margin */
-    padding: 0;
-    /* Removes any padding */
-    margin-left: 10px;
+    margin: 0 0 5px 10px; /* Reduce the gap by setting margin-bottom */
+    padding: 0; /* Ensure no padding is applied */
 }
+
 
 
 .footer{
@@ -210,7 +205,9 @@ h2 {
 
 .footer-table {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   
   .footer-cell {
@@ -236,12 +233,12 @@ h2 {
   }
   
   .footer h6 {
-    font-size: 18px;
+    font-size: 12px;
     font-weight: bold;
   }
   
   .footer h7 {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: normal;
   }
   
