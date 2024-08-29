@@ -253,14 +253,11 @@ h2 {
         flex-direction: column;
         gap: 20px;
     }
+
     .footer-cell h6,
-    .footer-cell h7 {
-      margin: 0;
-      padding-bottom: 0px;
+    .footer-cell p {
+        padding-bottom: 0px;
     }
-    
-
-
 
     .nav,
     .body,
@@ -282,7 +279,6 @@ h2 {
     h1,
     h2,
     h3,
-    h6,
     p {
         font-size: 14px;
     }
@@ -293,38 +289,99 @@ h2 {
     }
 }
 
+@media (max-width: 320px) {
+    .row {
+     
+        align-items: flex-start;
+    }
+
+    body{
+        width: full;
+    }
+
+    .label, .value {
+        width: 100%;
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    .subBox2, .subBox2a {
+        flex-direction: column;
+    }
+
+    .nav {
+        width: 100%;
+        max-width: 300px;
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        padding: 10px;
+    }
+
+    .footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .footer-table {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-table td {
+        padding: 5px;
+        width: 100%;
+    }
+
+    .box1, .box2 {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .download-info, .footer-legal {
+        text-align: center;
+    }
+}
+
 @media (max-width: 480px) {
     .footer {
-        padding: 5px;
+        padding: 8px;
     }
 
     .Fbox1 {
-        gap: 10px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    body{
+     
     }
 
     .box1,
     .box2 {
         margin: 0;
     }
-    .footer-cell div {
-        display: flex;
-        gap: 4px;
-        flex-direction: column;
-      }
 
+    .footer-cell div {
+        flex-direction: column;
+        gap: 6px;
+    }
 
     .logo {
-        width: 14px;
-        height: 14px;
-        padding: 4px;
+        width: 15px;
+        height: 15px;
+        padding: 5px;
     }
 
     h1,
     h2,
     h3,
-    h6,
     p {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .value,
